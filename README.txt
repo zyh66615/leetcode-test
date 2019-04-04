@@ -1,7 +1,7 @@
 # leetcode-test
 刷leetcode的code代码
 
-1.28ms, 10.2MB
+1.24ms, 10.1MB
 2.68ms, 10.3MB
 3.24ms, 8.9MB
 4.36ms, 9.9MB
