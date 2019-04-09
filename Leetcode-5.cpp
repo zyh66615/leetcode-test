@@ -1,4 +1,9 @@
-
+static const auto _ = []()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    return nullptr;
+}();
 class Solution {
 public:
     string longestPalindrome(string s) {
