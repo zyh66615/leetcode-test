@@ -32,7 +32,7 @@ FLAGS = flags.FLAGS
 
 ## Required parameters
 flags.DEFINE_string(
-    "data_dir", None,
+    "data_dir", './model_require/data',
     "The input data dir. Should contain the .tsv files (or other data files) "
     "for the task.")
 
