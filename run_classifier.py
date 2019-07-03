@@ -221,7 +221,7 @@ class SimProcessor(DataProcessor):
 
   def get_labels(self):
     """See base class."""
-    return ["0", "1"]
+    return ["good", "normal", "bad"]
 
   def _create_examples(self, lines, set_type):
     """Creates examples for the training and dev sets."""
@@ -232,7 +232,7 @@ class SimProcessor(DataProcessor):
       guid = "%s-%s" % (set_type, i)
       text_a = tokenization.convert_to_unicode(line[1])
       if set_type == "test":
-        label = "0"
+        label = "good"
       else:
         label = tokenization.convert_to_unicode(line[0])
       examples.append(
@@ -1013,6 +1013,7 @@ def main(_):
         writer.write(output_line)
         num_written_lines += 1
     assert num_written_lines == num_actual_predict_examples
+
 
 
 if __name__ == "__main__":
